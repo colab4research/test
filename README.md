@@ -23,4 +23,10 @@ In the data labelling process, two authors identify whether a report is a perfor
 
 
 
+> **R3Q2:Is there something else part of the content or does the content only consist of title + description?**
+
+In this paper, 'Content' refers to the textual information of 'Title' and 'Description' after extraction of 'Code' and 'Command', where 'Code' for reproduction is a common feature in the description of a GitHub report and 'Command'is the code snippet that is not part of the code block but is mixed with the texts in the description.
+
+
+
 
