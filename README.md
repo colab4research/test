@@ -21,7 +21,7 @@ In the data labelling process, two authors identify whether a report is a perfor
 
 > **R3Q1:Why the MHPurf variant provides all information but performs comparatively bad to the other variants?**
 
-
+More information could sometimes be beneficial to the DL classifier. But it may cause over-fitting as well. Besides, it should be not due to fewer neurons per feature. Instead, the amount of paramters for each feature remains unchanged because the thier network structures are the same except the encoder part. 
 
 > **R3Q2:Is there something else part of the content or does the content only consist of title + description?**
 
