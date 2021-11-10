@@ -27,6 +27,28 @@ More information could sometimes be beneficial to the DL classifier. But it may 
 
 In this paper, 'Content' refers to the textual information of 'Title' and 'Description' after extraction of 'Code' and 'Command', where 'Code' for reproduction is a common feature in the description of a GitHub report and 'Command'is the code snippet that is not part of the code block but is mixed with the texts in the description.
 
+---
+
+## Additional Responses
+
+---
+
+> **R2-comment1:** I am very confused with the use of the word "performance" in this paper, which, as far as I can tell, stands for accuracy, but I'm not sure. If so, the title should be "Multifaceted Hierarchical Accuracy Bug Report Identification for Deep Learning Projects". The intro starts by justifying this word in this way: "[performance bug means] and, in the context of DL systems, insufficient prediction accuracy and loss [62]." Reading paper [62] I find no traces of such definition. At some point [62] even says: "The small number of performance inefficiency issues suggests either performance issues rarely occur or these issues are difficult to detect." 
+
+We would like to kindly mention that Nistor et al. [33] indicate that 'the training process based on an invalid DL model is ineffective even though it does not necessarily result in a TensorFlow error. This explains the poor performance of the trained model in terms of accuracy and loss.'. Moreover, they report that 'Another (second) TF user posted an issue reporting heavily blurred predicted images and poor loss performance.'. The referenced contexts above explain that Nistor et al. [33] consider low accuracy and loss value as poor performance issues.
+
+Indeed, the small number of performance inefficiency issues suggests either performance issues rarely occur or these issues are difficult to detect. But this does not mean we should give up discovering a way to detect those issues because they can lead to severe consequences in DL systems.  
+
+> **R2-comment2:** On the other hand, later on, this submission says: "Our work here is to automatically identify those GitHub reports that are related to the performance of DL framework." So it looks like it is performance bugs not of the application itself but of the underlying DL framework? I found it really difficult to understand what exactly the work is trying to do.
+
+When we are talking about the phrase of 'DL framework', it refers to 'DL application' or 'DL project' as well. We will revise accordingly by using the same terms to mitigate reader's confusion.
+
+> **R2-comment3:** Related to this, the paper fails to convince me that the problem that is targeted by the work -- automatic identification of either performance or accuracy bug reports -- is important. Why do we need an automatic tool for this? In fact, taking [62] at face value, it looks like there aren't that many performance bug reports in DL applications.
+
+
+
+
+
 
 
   
