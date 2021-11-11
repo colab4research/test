@@ -30,6 +30,8 @@ More information could sometimes be beneficial to the DL classifier. But it may 
 
 > **R3Q2:Is there something else part of the content or does the content only consist of title + description?**
 
+顺着他的意思
+
 In this paper, 'Content' refers to the textual information of 'Title' and 'Description' after extraction of 'Code' and 'Command', where 'Code' for reproduction is a common feature in the description of a GitHub report and 'Command' is the code snippet that is not part of the code block but is mixed with the texts in the description.
 
 ---
@@ -39,6 +41,8 @@ In this paper, 'Content' refers to the textual information of 'Title' and 'Descr
 ---
 
 > **R1-comment1:** In RQ3, the paper includes many baselines. I was wondering why not include Bert-based text classification.
+
+bert unfair
 
 > **R1-comment2:** I would suggest to move the definition of performance bugs in Section 4.1 to some early part of the paper. Maybe consider presenting the results in Table 5/6/7 in box plots which might be easier to observe than the table format?
 
@@ -55,6 +59,8 @@ In our work. during the labeling process, we took four months (around 120 workin
 > **R3-comment1:** A bottleneck for the presented method is the required data set. It took the authors about 120 working days to manually label the data. In order to scale up the approach, the authors should search for already available data sets. I wonder whether commit messages of already fixed bugs could serve as a source for labels.
 
 Nice point! Actually, we did conduct a similar experiment to see the performance of this model on Ohira et al.'s dataset [34] for the task of performance bug report classification. But poor results were obtained due to its extreme unbalance of positive samples.
+
+承认有limitation，用我们这个模型之后在进行人工处理会更方便
 
 > **R3-comment2:** As a fellow reviewer pointed out, there is a problem with the notion of "performance bug". This, I think, is due to the quote from [62] in the introduction of the paper. In [62], the authors discuss the bug to mix up the computation model of Tensorflow, i.e. using Tensorflow in a wrong way. At the end of this discussion, they state "This explains the poor performance of the trained model in terms of accuracy and loss." This is "performance" in the sense of accuracy, not at all related to performance in the sense of timeliness! The authors in this submission now state "This “performance degradation” contains poor user experience, degraded responsiveness, waste computational resources [19], and, in the context of DL systems, insufficient prediction accuracy and loss [62]." I disagree, as these are two different meanings of the word "performance" (timeliness vs. accuracy). So the part "in the context of DL systems, insufficient prediction accuracy and loss [62]." should be deleted. This mistake, however, leads to the problem that the notion of "performance bug" in the paper is unclear.
 
